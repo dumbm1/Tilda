@@ -1,0 +1,2652 @@
+/* The animation code */
+@keyframes loaderBlicks {
+ 0% {
+  opacity : 0.8;
+ }
+ 50% {
+  opacity : 0;
+ }
+ 100% {
+  opacity : 0.8;
+ }
+}
+
+/* The element to apply the animation to */
+.moyklassLoader {
+ width      : 100%;
+ text-align : center;
+}
+
+.moyklassLoader img {
+ width                     : 100px;
+ height                    : 100px;
+ opacity                   : 0.8;
+ animation-name            : loaderBlicks;
+ animation-duration        : 1s;
+ animation-iteration-count : infinite;
+ animation-timing-function : ease-in;
+}
+
+.WdgMoyklassContent {
+ font-family : 'Exo 2', sans-serif !important;
+ /*font-weight : 400;*/
+ font-size   : 14px !important;
+ line-height : 20px !important;
+ /*color       : #333333;*/
+}
+
+/* Form */
+.WdgMoyklassContent .wdgMoyklassForm-item,
+.WdgMoyklassModal .wdgMoyklassForm-item {
+ margin-bottom : 15px !important;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-item label {
+ display       : block;
+ line-height   : 20px;
+ margin-bottom : 0px;
+}
+
+.WdgMoyklassContent input,
+.WdgMoyklassContent button,
+.WdgMoyklassContent select,
+.WdgMoyklassContent textarea {
+ font-family : inherit;
+ font-size   : inherit;
+ line-height : inherit;
+}
+
+.WdgMoyklassContent input,
+.WdgMoyklassContent select,
+.WdgMoyklassContent textarea {
+ background: none;
+}
+
+.WdgMoyklassContent input:not([type="submit"]),
+.WdgMoyklassContent select,
+.WdgMoyklassContent textarea {
+ border      : none !important;
+ border-bottom: 1px solid darkgray !important;
+ /*width       : 100%;*/
+ /*height      : auto;*/
+ /*padding     : 11px;*/
+ /*font-weight : 300;*/
+ /*font-size   : inherit;*/
+ /*line-height : inherit;*/
+ /*box-sizing  : border-box;*/
+}
+
+.WdgMoyklassContent input:not([type="submit"])::-webkit-input-placeholder {
+ font-weight : 100;
+ color       : #9f9f9f;
+}
+
+.WdgMoyklassContent input:not([type="submit"])::-moz-placeholder {
+ font-weight : 100;
+ color       : #9f9f9f;
+}
+
+.WdgMoyklassContent input:not([type="submit"]):-ms-input-placeholder {
+ font-weight : 100;
+ color       : #9f9f9f;
+}
+
+.WdgMoyklassContent input:not([type="submit"]):-moz-placeholder {
+ font-weight : 100;
+ color       : #9f9f9f;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-item select[name=class_id],
+.WdgMoyklassContent .wdgMoyklassForm-item select[name=filial] {
+ font-weight : 400;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-item select.error {
+ color : #ff0000;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-item select.error option {
+ color : #000000;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-item select option:disabled {
+ color : grey;
+}
+
+.WdgMoyklassContent .tabDescription {
+ border-bottom : 2px solid #61bd70;
+ margin-bottom : 20px;
+}
+
+.WdgMoyklassContent .tabDescription > div,
+.WdgMoyklassContent .tabDescriptionSchedule > div {
+ display   : inline-block;
+ font-size : 16px;
+ padding   : 10px 10px 5px;
+ cursor    : pointer;
+ color     : rgb(137, 137, 137);
+}
+
+.WdgMoyklassContent .tabDescription > div:first-child,
+.WdgMoyklassContent .tabDescriptionSchedule > div:first-child {
+ padding-left : 0px;
+}
+
+.WdgMoyklassContent .tabDescription > div.active
+.WdgMoyklassContent .tabDescriptionSchedule > div.active {
+ color : #61bd70;
+}
+
+.WdgMoyklassContent .tabDescription > div.disable
+.WdgMoyklassContent .tabDescriptionSchedule > div.disable {
+ color : #bbbbbb;
+}
+
+.WdgMoyklassContent .descriptionBox {
+ background : rgb(247, 247, 247);
+ padding    : 10px;
+}
+
+.WdgMoyklassContent .descriptionBox img {
+ max-width : 100%;
+}
+
+.WdgMoyklassContent .descriptionBox,
+.WdgMoyklassContent .imagesBox {
+ line-height : 18px;
+}
+
+.WdgMoyklassContent .descriptionBox .ql-video-wrapper {
+ position       : relative;
+ padding-bottom : 56.25%;
+ height         : 0;
+ overflow       : hidden;
+ max-width      : 100%;
+}
+
+@media (min-width : 600px) {
+ .WdgMoyklassContent .descriptionBox .ql-video-wrapper {
+  position       : relative;
+  padding-bottom : 297px;
+  height         : 0;
+  overflow       : hidden;
+  max-width      : 528px;
+ }
+}
+
+@media only screen and (max-width : 600px) {
+ .WdgMoyklassContent .tabDescription > div,
+ .WdgMoyklassContent .tabDescriptionSchedule > div {
+  padding : 10px 6px 5px;
+ }
+}
+
+.WdgMoyklassContent .descriptionBox .ql-video-wrapper .ql-video {
+ position : absolute;
+ top      : 0;
+ left     : 0;
+ width    : 100%;
+ height   : 100%;
+}
+
+.WdgMoyklassContent .imagesBoxSchedule {
+ background  : rgb(247, 247, 247);
+ padding-top : 10px;
+}
+
+.WdgMoyklassContent .imagesBoxSchedule .imagesBox__imageContainer {
+ display        : inline-block;
+ width          : 350px;
+ padding        : 0px 10px 15px;
+ vertical-align : top;
+}
+
+.WdgMoyklassContent .imagesBoxSchedule .imagesBox__imageContainer img {
+ width  : 100%;
+ margin : 0;
+}
+
+.WdgMoyklassContent .coverImage {
+ display       : block;
+ margin-bottom : 10px;
+ height        : 100%;
+}
+
+.WdgMoyklassContent .descrBlock {
+ display : block;
+}
+
+.WdgMoyklassContent .coverImage img {
+ width     : 100%;
+ height    : auto;
+ max-width : none;
+}
+
+.WdgMoyklassContent .shortDescription {
+ display     : inline-block;
+ line-height : 18px;
+}
+
+.WdgMoyklassContent .groupComment {
+ display    : block;
+ margin-top : 15px;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls table {
+ width : 100%;
+}
+
+.WdgMoyklassModal .shortDescriptionContainerCls,
+.WdgMoyklassModal .descriptionBox {
+ font-size : 14px;
+}
+
+.WdgMoyklassContent .imagesBox img,
+.WdgMoyklassModal .imagesBox img {
+ width         : 100%;
+ height        : auto;
+ margin-bottom : 15px;
+ cursor        : pointer;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont {
+ display : table;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont .shortDescriptionContainerCls-row {
+ display : table-row;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont .coverImage,
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont td {
+ display        : table-cell;
+ vertical-align : middle;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont .coverImage {
+ vertical-align : middle;
+ min-width      : 90px;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont .coverImage .img-container {
+ border-radius : 72px;
+ width         : 72px;
+ height        : 72px;
+ overflow      : hidden;
+}
+
+.WdgMoyklassContent .shortDescriptionContainerCls.smallDescCont .coverImage img {
+ height    : 72px;
+ width     : auto;
+ max-width : none;
+}
+
+.WdgMoyklassContent .submitHorizontal {
+ margin-top : 20px;
+}
+
+/* Form checkbox */
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox {
+ vertical-align : top;
+ margin         : 0 3px 0 0;
+ width          : 17px;
+ height         : 17px;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox + label {
+ cursor      : pointer;
+ font-weight : 200;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox + label > span:first-child {
+ width : 95%;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox:not(checked) {
+ position : absolute;
+ opacity  : 0;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox:not(checked) + label {
+ display     : flex;
+ align-items : center;
+ position    : relative;
+ /* Ð±ÑƒÐ´ÐµÐ¼ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÑÐµÐ²Ð´Ð¾Ñ‡ÐµÐºÐ±Ð¾ÐºÑ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ labelÂ */
+ padding     : 5px 0px;
+ /* Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼ ÑÐ»ÐµÐ²Ð° Ð¾Ñ‚ labelÂ Ð¼ÐµÑÑ‚Ð¾ Ð¿Ð¾Ð´ Ð¿ÑÐµÐ²Ð´Ð¾Ñ‡ÐµÐºÐ±Ð¾ÐºÑÂ */
+ margin      : 0;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox:not(checked) + label:before {
+ content        : '';
+ display        : inline-block;
+ vertical-align : middle;
+ width          : 22px;
+ height         : 22px;
+ border         : 1px solid #b8b8b7;
+ border-radius  : 3px;
+ margin-right   : 8px;
+ background     : #ffffff;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox:not(checked) + label:after {
+ position           : absolute;
+ top                : 50%;
+ left               : 8px;
+ content            : '';
+ display            : inline-block;
+ vertical-align     : middle;
+ width              : 7px;
+ height             : 16px;
+ margin-top         : -10px;
+ color              : #333333;
+ box-sizing         : border-box;
+ -webkit-transform  : rotate(45deg) scale(0);
+ transform          : rotate(45deg) scale(0);
+ border-width       : 2px;
+ border-style       : solid;
+ border-top         : 0;
+ border-left        : 0;
+ -webkit-transition : 0.3s;
+ transition         : 0.3s;
+}
+
+.WdgMoyklassContent .wdgMoyklassFormCheckbox:checked + label:after {
+ -webkit-transform : rotate(45deg) scale(1);
+ transform         : rotate(45deg) scale(1);
+}
+
+/* Form button  */
+.WdgMoyklassContent .wdgMoyklass-btn {
+ box-sizing       : border-box;
+ display          : inline-block;
+ text-align       : center;
+ padding          : 10px;
+ color            : #ffffff;
+ cursor           : pointer;
+ border-radius    : 0;
+ background-color : #61bd70;
+ border           : 0;
+}
+
+.WdgMoyklassContent .wdgMoyklass-btn.FormButton {
+ padding-left  : 25px;
+ padding-right : 25px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-btn:hover,
+.WdgMoyklassContent .wdgMoyklass-btn:focus {
+ color            : #ffffff;
+ text-decoration  : none;
+ background-color : #368243;
+}
+
+.WdgMoyklassContent .wdgMoyklass-btn.btn-block {
+ width : 100%;
+}
+
+.WdgMoyklassContent .zero-padding {
+ padding : 0px !important;
+}
+
+/* Modal */
+
+.WdgMoyklassModalItem {
+ display                    : none;
+ /* overflow: hidden; */
+ overflow                   : auto;
+ position                   : fixed;
+ top                        : 0;
+ right                      : 0;
+ bottom                     : 0;
+ left                       : 0;
+ z-index                    : 99999;
+ -webkit-overflow-scrolling : touch;
+ outline                    : 0;
+}
+
+.WdgMoyklassModalItem.WdgMoyklassModalItemFade .WdgMoyklassModalItem-dialog {
+ -webkit-transform  : translate(0, -25%);
+ -ms-transform      : translate(0, -25%);
+ -o-transform       : translate(0, -25%);
+ transform          : translate(0, -25%);
+ -webkit-transition : -webkit-transform 0.3s ease-out;
+ -moz-transition    : -moz-transform 0.3s ease-out;
+ -o-transition      : -o-transform 0.3s ease-out;
+ transition         : transform 0.3s ease-out;
+}
+
+.WdgMoyklassModalItem.WdgMoyklassModalItemIn .WdgMoyklassModalItem-dialog {
+ -webkit-transform : translate(0, 0);
+ -ms-transform     : translate(0, 0);
+ -o-transform      : translate(0, 0);
+ transform         : translate(0, 0);
+}
+
+.WdgMoyklassModalItem-dialog {
+ position : relative;
+ width    : auto;
+ margin   : 10px;
+}
+
+.WdgMoyklassModalItem-content {
+ position           : relative;
+ background-color   : #ffffff;
+ border             : 1px solid #999999;
+ border             : 1px solid rgba(0, 0, 0, 0.2);
+ border-radius      : 6px;
+ -webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.5);
+ box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.5);
+ background-clip    : padding-box;
+ outline            : 0;
+ z-index            : 1060;
+}
+
+.WdgMoyklassModalItem-header {
+ padding       : 15px;
+ border-bottom : 1px solid #e5e5e5;
+}
+
+.WdgMoyklassModalItem-header .close {
+ margin-top : -2px;
+}
+
+.WdgMoyklassModalItem-title {
+ margin      : 0;
+ line-height : 1.42857143;
+}
+
+.WdgMoyklassModalItem-body {
+ position : relative;
+ padding  : 25px;
+}
+
+.WdgMoyklassModalItem-footer {
+ padding    : 25px;
+ text-align : right;
+ border-top : 1px solid #e5e5e5;
+}
+
+.WdgMoyklassModalItem-footer .btn + .btn {
+ margin-left   : 5px;
+ margin-bottom : 0;
+}
+
+.WdgMoyklassModalItem-footer .btn-group .btn + .btn {
+ margin-left : -1px;
+}
+
+.WdgMoyklassModalItem-footer .btn-block + .btn-block {
+ margin-left : 0;
+}
+
+.WdgMoyklassModalItem-scrollbar-measure {
+ position : absolute;
+ top      : -9999px;
+ width    : 50px;
+ height   : 50px;
+ overflow : scroll;
+}
+
+.WdgMoyklassModalItem-open {
+ overflow : hidden;
+}
+
+.WdgMoyklassModalItem-open > .WdgMoyklassModal {
+ overflow-x : hidden;
+ overflow-y : auto;
+}
+
+.WdgMoyklassModal .error,
+.wdgMoyklassForm-item .error {
+ color : #ff0000;
+}
+
+.WdgMoyklassModal .success {
+ color : #1abc9c;
+}
+
+.WdgMoyklassModal .WdgMoyklassclose {
+ position           : absolute;
+ top                : 2px;
+ right              : 7px;
+ font-size          : 25px;
+ font-family        : Tahoma;
+ font-weight        : 400;
+ line-height        : 1;
+ color              : #000000;
+ opacity            : .2;
+ filter             : alpha(opacity=20);
+ /* margin: 2px 7px; */
+ z-index            : 1;
+ padding            : 0;
+ cursor             : pointer;
+ background         : transparent;
+ border             : 0;
+ -webkit-appearance : none;
+}
+
+.WdgMoyklassModal .WdgMoyklassclose:hover,
+.WdgMoyklassModal .WdgMoyklassclose:focus {
+ color           : #000000;
+ text-decoration : none;
+ cursor          : pointer;
+ opacity         : .5;
+ filter          : alpha(opacity=50);
+}
+
+#wdgMoyklassModal-backdrop {
+ position         : fixed;
+ top              : 0;
+ right            : 0;
+ bottom           : 0;
+ left             : 0;
+ z-index          : 1040;
+ background-color : #000000;
+}
+
+#wdgMoyklassModal-backdrop.WdgMoyklassModalItemFade {
+ opacity : 0;
+ filter  : alpha(opacity=0);
+}
+
+#wdgMoyklassModal-backdrop.WdgMoyklassModalItemIn {
+ opacity : 0.5;
+ filter  : alpha(opacity=50);
+}
+
+@media (min-width : 590px) {
+ .WdgMoyklassModalItem-dialog {
+  max-width : 600px;
+  margin    : 30px auto;
+ }
+
+ .WdgMoyklassModalItem-content {
+  -webkit-box-shadow : 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow         : 0 5px 15px rgba(0, 0, 0, 0.5);
+ }
+
+ .WdgMoyklassModalItem-sm {
+  width : 300px;
+ }
+
+ .WdgMoyklassContent .lesson-item .lesson-item-aud-room {
+  line-height : 14px;
+ }
+}
+
+@media (min-width : 992px) {
+ .WdgMoyklassModalItem-lg {
+  width : 900px;
+ }
+}
+
+/* Headers */
+
+.WdgMoyklassContent .wdgMoyklass-h1 {
+ font-size   : 28px;
+ line-height : 30px;
+ font-weight : 300;
+}
+
+.WdgMoyklassContent .wdgMoyklass-h2 {
+ font-size   : 20px;
+ line-height : 22px;
+ font-weight : 400;
+}
+
+.WdgMoyklassContent .wdgMoyklass-h3 {
+ font-size   : 16px;
+ line-height : 18px;
+ font-weight : 400;
+}
+
+/* Other */
+
+.WdgMoyklassContent a {
+ text-decoration : none;
+}
+
+.WdgMoyklassContent a:hover,
+.WdgMoyklassContent a:focus {
+ text-decoration : underline;
+}
+
+.WdgMoyklassContent .text-center {
+ text-align  : center;
+ line-height : 30px;
+}
+
+.WdgMoyklassContent .m-b-lg {
+ margin-bottom : 18px !important;
+}
+
+.WdgMoyklassContent .m-b-md {
+ margin-bottom : 9px !important;
+}
+
+.WdgMoyklassContent .m-y-lg {
+ margin-top    : 18px !important;
+ margin-bottom : 18px !important;
+}
+
+.WdgMoyklassContent .m-l {
+ margin-left : 18px !important;
+}
+
+.WdgMoyklassContent .m-tb-5 {
+ margin : 5px 0px;
+}
+
+.WdgMoyklassContent .m-tb-14 {
+ margin : 14px 0px;
+}
+
+.WdgMoyklassContent .m-t-md {
+ margin-top : 9px !important;
+}
+
+.WdgMoyklassContent .m-t-lg {
+ margin-top : 18px !important;
+}
+
+.WdgMoyklassContent .p-l-0 {
+ padding-left : 0px !important;
+}
+
+.WdgMoyklassContent .w-30 {
+ width : 32.5% !important;
+}
+
+.WdgMoyklass-birthday-select-cont {
+ display         : flex;
+ justify-content : space-between;
+}
+
+.WdgMoyklassContent .p-r-0 {
+ padding-right : 0px !important;
+}
+
+.WdgMoyklassContent .p-b-lg {
+ padding-bottom : 18px !important;
+}
+
+.WdgMoyklassContent .p-b-0 {
+ padding-bottom : 0px !important;
+}
+
+.WdgMoyklassContent .p-b-5 {
+ padding-bottom : 5px;
+}
+
+.WdgMoyklassContent .p-b-10 {
+ padding-bottom : 10px;
+}
+
+.WdgMoyklassContent .p-b-15 {
+ padding-bottom : 15px;
+}
+
+.WdgMoyklassContent table {
+ border-spacing : 0px;
+}
+
+@media (min-width : 992px) {
+ .WdgMoyklassContent .m-l-md {
+  margin-left : 9px !important;
+ }
+}
+
+.WdgMoyklassContent .m-l-lg {
+ margin-left : 18px !important;
+}
+
+.WdgMoyklassContent .error,
+.WdgMoyklassContent .error label {
+ color : #ff0000;
+}
+
+.WdgMoyklassModal .FormError,
+.WdgMoyklassContent .FormError {
+ display : none;
+}
+
+.WdgMoyklassModal .FormError.error,
+.WdgMoyklassContent .FormError.error,
+.WdgMoyklassModal .FormError.success,
+.WdgMoyklassContent .FormError.success {
+ display : block;
+ padding : 9px 0px;
+}
+
+.WdgMoyklassModal .FormError.error label,
+.WdgMoyklassContent .FormError.error label,
+.WdgMoyklassModal .FormError.success label,
+.WdgMoyklassContent .FormError.success label {
+ font-weight : 600;
+}
+
+.WdgMoyklassContent .success {
+ color : #1abc9c;
+}
+
+.WdgMoyklassContent .error input:not([type="submit"]),
+.WdgMoyklassContent .error textarea,
+.WdgMoyklassContent .error select {
+ border-color : #ff0000;
+ color        : #ff0000;
+}
+
+.WdgMoyklassContent .p-y {
+ padding-top    : 6px !important;
+ padding-bottom : 6px !important;
+}
+
+.WdgMoyklassContent .p-y-md {
+ padding-top    : 9px !important;
+ padding-bottom : 9px !important;
+}
+
+.WdgMoyklassContent .p-b {
+ padding-bottom : 6px !important;
+}
+
+.WdgMoyklassContent .p-t-14 {
+ padding-top : 14px !important;
+}
+
+.WdgMoyklassContent .p-t-10 {
+ padding-top : 10px;
+}
+
+.WdgMoyklassContent .p-t-15 {
+ padding-top : 15px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-color {
+ color : #61bd70;
+}
+
+.WdgMoyklassContent [role="button"] {
+ cursor : pointer;
+}
+
+.WdgMoyklassContent .wdgMoyklass-font-light {
+ font-weight : 300;
+}
+
+/* Subscribe */
+.WdgMoyklassContent .wdgMoyklassForm-consent,
+.WdgMoyklassContent .wdgMoyklassForm-consent label,
+.WdgMoyklassContent .wdgMoyklassForm-company_link {
+ font-size   : 12px;
+ font-weight : normal;
+ line-height : 14px;
+ color       : #7d7c7c;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-company_link {
+ font-size   : 10px;
+ line-height : 10px;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-consent a,
+.WdgMoyklassContent .wdgMoyklassForm-company_link a {
+ color           : #7d7c7c;
+ text-decoration : underline;
+}
+
+.WdgMoyklassContent .wdgMoyklassForm-consent a:hover,
+.WdgMoyklassContent .wdgMoyklassForm-company_link a:hover {
+ text-decoration : none;
+}
+
+.WdgMoyklassContent .wdgMoyklass-btn.wdgMoyklass-btn-disable {
+ background-color : #bbbbbb !important;
+}
+
+.WdgMoyklassContent .hide {
+ display : none !important;
+}
+
+@media (max-width : 590px) {
+ .WdgMoyklassContent .hidden-xs {
+  display    : none !important;
+  background : #1abc9c;
+ }
+}
+
+@media (max-width : 590px) {
+ .WdgMoyklassContent .visible-xs {
+  display : block !important;
+ }
+}
+
+@media (min-width : 591px) {
+ .WdgMoyklassContent .visible-xs,
+ .WdgMoyklassModal .visible-xs {
+  display : none !important;
+ }
+
+ .WdgMoyklassContent .request-schedule-button {
+  margin : 18px 0px;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-group {
+  display     : flex;
+  align-items : center;
+ }
+}
+
+/* Lessons Selector */
+
+.wdgMoyklassForm-lessons-selector {
+ position         : relative;
+ box-sizing       : border-box;
+ padding          : 5px;
+ border           : 1px solid rgb(212, 212, 212);
+ overflow-y       : auto;
+ background-color : #ffffff;
+ transition       : opacity 0.1s;
+ opacity          : 0;
+ margin-bottom    : 28px;
+}
+
+.wdgMoyklassForm-teachers-selector {
+ position         : relative;
+ box-sizing       : border-box;
+ padding-bottom   : 14px;
+ overflow-y       : auto;
+ background-color : #ffffff;
+ transition       : opacity 0.1s;
+}
+
+.WdgMoyklassContent .header-row-flex {
+ display       : flex;
+ width         : 100%;
+ margin-bottom : 0 !important;
+}
+
+.WdgMoyklassContent .first-cell-flex {
+ align-self : start;
+}
+
+.WdgMoyklassContent .table-row-flex {
+ display : flex !important;
+ width   : 100% !important;
+ height  : auto;
+ /*align-items: baseline !important;*/
+}
+
+.WdgMoyklassContent .teachers-time-scroll {
+ overflow-y    : scroll;
+ max-height    : 150px;
+ margin-bottom : 18px !important;
+}
+
+.WdgMoyklassContent .teachers-time-scroll::-webkit-scrollbar {
+ width  : 8px;
+ height : 2px;
+}
+
+.wdgMoyklassForm-lessons-selector::-webkit-scrollbar {
+ width  : 8px;
+ height : 2px;
+}
+
+.WdgMoyklassContent .teachers-time-scroll::-webkit-scrollbar-thumb {
+ background-color : #f0f0f0 !important;
+}
+
+.wdgMoyklassForm-lessons-selector::-webkit-scrollbar-thumb {
+ background-color : #f0f0f0 !important;
+}
+
+.WdgMoyklassContent .table-tbody-flex {
+ display        : block;
+ flex-direction : column;
+ width          : 100%;
+}
+
+.WdgMoyklassContent .tr-br-flex {
+ display : flex;
+ width   : 100%;
+}
+
+.WdgMoyklassContent .wdg-mb-5 {
+ margin-bottom : 5px;
+}
+
+.wdgMoyklassForm-teachers-time-selector {
+ display               : grid;
+ grid-template-columns : repeat(4, 1fr);
+ grid-gap              : 5px;
+}
+
+.no-grid-selector {
+ grid-template-columns : none !important;
+}
+
+.WdgMoyklassContent .fake-time-block {
+ visibility : hidden;
+ cursor     : none;
+}
+
+.wdgMoyklassForm-nomargin {
+ margin-bottom : 0px !important;
+}
+
+.WdgMoyklassContent .m-0 {
+ margin : 0px !important;
+}
+
+.FormLessonsContent-count {
+ position : relative;
+ padding  : 0px 0px 10px 0px;
+}
+
+.wdgMoyklassForm-lessons-item {
+ display          : flex;
+ align-items      : center;
+ padding          : 6px;
+ cursor           : pointer;
+ margin-bottom    : 2px;
+ background-color : #f5f5f5;
+}
+
+.wdgMoyklassForm-lessons-item.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.WdgMoyklassContent .active_date_hello {
+ background : #61bd70 !important;
+}
+
+.wdgMoyklassForm-lessons-item:not(.active):hover {
+ background : rgb(237, 237, 237);
+}
+
+.wdgMoyklassForm-lessons-item p {
+ margin : 4px 0px;
+}
+
+.wdgMoyklassForm-lessons-item .fs12,
+.WdgMoyklassContent .fs12 {
+ font-size : 12px;
+}
+
+.wdgMoyklassForm-lessons-item .fs14,
+.WdgMoyklassContent .fs14 {
+ font-size : 14px;
+}
+
+.wdgMoyklassForm-teachers-item {
+ display          : flex;
+ align-items      : center;
+ padding          : 6px;
+ margin-top       : 6px;
+ cursor           : pointer;
+ margin-bottom    : 6px;
+ background-color : #f5f5f5;
+}
+
+.WdgMoyklassContent .FormDurationSelector {
+ display               : grid;
+ grid-template-columns : 1fr 1fr 1fr;
+ grid-gap              : 5px;
+ padding-top           : 15px;
+ padding-bottom        : 10px;
+}
+
+.WdgMoyklassContent .FormDurationSelector .FormDurationSelectorItem {
+ display     : flex;
+ align-items : center;
+ padding     : 5px;
+}
+
+.WdgMoyklassContent .FormTeachersContent-hat {
+ display         : flex;
+ justify-content : space-between;
+ padding-bottom  : 5px;
+ padding-top     : 5px;
+ margin-bottom   : 10px;
+}
+
+.WdgMoyklassContent .FormTeachersContent-hat .nav {
+ cursor : pointer;
+}
+
+.wdgMoyklassForm-duration-time-item {
+ min-height       : 30px;
+ padding          : 5px;
+ cursor           : pointer;
+ background-color : #f5f5f5;
+ display          : flex;
+ align-items      : center;
+ flex-direction   : column;
+ text-align       : center;
+}
+
+@media only screen and (max-width : 450px) {
+ .WdgMoyklassContent .FormDurationSelector {
+  display               : grid;
+  grid-template-columns : 1fr 1fr;
+  grid-gap              : 5px;
+  padding-top           : 15px;
+  padding-bottom        : 10px;
+ }
+}
+
+@media only screen and (max-width : 450px) {
+ .wdgMoyklassForm-teachers-time-selector {
+  display               : grid;
+  grid-template-columns : 1fr 1fr;
+  grid-gap              : 5px;
+ }
+}
+
+.wdgMoyklassForm-duration-item.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.wdgMoyklassForm-duration-time-item.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.wdgMoyklassForm-duration-time-item:not(.active):hover {
+ background : rgb(237, 237, 237);
+}
+
+.wdgMoyklassForm-duration-item:not(.active):hover {
+ background : rgb(237, 237, 237);
+}
+
+.wdgMoyklassForm-teachers-time-item {
+ min-height       : 30px;
+ padding          : 6px;
+ cursor           : pointer;
+ background-color : #f5f5f5;
+ display          : flex;
+ align-items      : center;
+ flex-direction   : column;
+ text-align       : center;
+}
+
+.wdgMoyklassForm-teachers-item.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.wdgMoyklassForm-teachers-time-item.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.wdgMoyklassForm-teachers-time-item:not(.active):hover {
+ background : rgb(237, 237, 237);
+}
+
+.wdgMoyklassForm-teachers-item:not(.active):hover {
+ background : rgb(237, 237, 237);
+}
+
+.WdgMoyklassContent .teacher-desc {
+ display : none;
+}
+
+.WdgMoyklassContent .break-desc {
+ word-break : break-word;
+}
+
+.WdgMoyklassContent .select-individual-line {
+ line-height : 1.2;
+}
+
+.WdgMoyklassContent .break-desc img {
+ width : 100%;
+}
+
+.WdgMoyklassContent .break-desc iframe {
+ width : 100% !important;
+}
+
+.WdgMoyklassContent .teacher-desc-limited {
+ max-height : 95px;
+ overflow   : hidden;
+ position   : relative;
+}
+
+.WdgMoyklassContent .read-more-btn {
+ cursor          : pointer;
+ text-decoration : underline;
+ font-size       : 12px;
+ display         : none;
+ margin-top      : 10px;
+}
+
+.WdgMoyklassContent .select-img {
+ height : 70px !important;
+ width  : 70px !important;
+}
+
+.wdgMoyklassForm-teachers-item p {
+ margin : 4px 0px;
+}
+
+.wdgMoyklassForm-teachers-item .fs12,
+.WdgMoyklassContent .fs12 {
+ font-size : 12px;
+}
+
+.wdgMoyklassForm-teachers-item .fs14,
+.WdgMoyklassContent .fs14 {
+ font-size : 14px;
+}
+
+.WdgMoyklassContent .fs16 {
+ font-size : 16px;
+}
+
+.wdgMoyklassForm-lessons-item > div {
+ flex-grow : 1;
+}
+
+.wdgMoyklassForm-lessons-item .companyRoomName {
+ margin-top : 5px;
+}
+
+.wdgMoyklassForm-lessons-item .lessonPlacesLeft,
+.wdgMoyklassForm-lessons-item .lessonDate {
+ flex-basis : 100px;
+}
+
+.wdgMoyklassForm-lessons-item .wdgMoyklassForm-lesson-info {
+ flex-grow  : 3;
+ flex-basis : 350px;
+}
+
+.wdgMoyklassForm-teachers-item .wdgMoyklassForm-teacher-info {
+ padding-right : 15px;
+}
+
+.WdgMoyklassContent .mc-mt-5 {
+ margin-bottom : 5px;
+}
+
+.wdgMoyklassForm-teachers-item .wdgMoyklassForm-teacher-avatar {
+ padding-right : 20px;
+ align-self    : start;
+}
+
+.WdgMoyklassContent .teacher-img {
+ border-radius : 100px;
+ max-width     : initial !important;
+}
+
+.WdgMoyklassContent .fake-img {
+ height           : 50px;
+ width            : 50px;
+ background-color : #bbbbbb;
+}
+
+.wdgMoyklassForm-lessons-DayTitle {
+ text-align : center;
+ margin     : 10px 0px;
+}
+
+.wdgMoyklassForm-item-select-padding {
+ padding-top    : 5px;
+ padding-bottom : 5px;
+}
+
+.FormLessonsContent-count .icon-mc-calendar {
+ position    : absolute;
+ top         : 4px;
+ right       : 11px;
+ cursor      : pointer;
+ line-height : 11px;
+ font-size   : 17px;
+ color       : #61bd70;
+}
+
+.FormLessonsContent-count .icon-mc-calendar.disableBtn {
+ color : #bbbbbb !important;
+}
+
+.FormLessonsContent-calendarFilter {
+ overflow   : hidden;
+ margin-top : -30px;
+ transition : opacity 0.4s;
+ opacity    : 0;
+ height     : 0px;
+ border     : 1px solid rgb(212, 212, 212);
+}
+
+/* Schedule */
+
+.WdgMoyklassContent .WdgMoyklassSchedule-submenu {
+ font-size     : 16px;
+ color         : rgb(137, 137, 137);
+ border-bottom : 2px solid rgb(45, 161, 50);
+ margin-bottom : 20px;
+}
+
+@media only screen and (max-width : 590px) {
+ .WdgMoyklassContent .WdgMoyklassSchedule-submenu {
+  display : none;
+ }
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-submenu > div {
+ display : inline-block;
+ padding : 10px 20px;
+ cursor  : pointer;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-submenu > div.active {
+ background-color : #61bd70;
+ color            : #ffffff;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-submenu > div[disabled] {
+ cursor  : default;
+ color   : #bbbbbb;
+ display : none;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-FilterItem {
+ height      : 48px;
+ line-height : 48px !important;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-FilterItem:not(:first-child),
+.WdgMoyklassContent .combo-schedule_calendar-filter {
+ padding-left : 10px !important;
+}
+
+.WdgMoyklassContent .combo-schedule_calendar-filter {
+ padding-left  : 13px !important;
+ padding-right : 0px !important;
+ white-space   : nowrap;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-TypeItem {
+ display      : inline-block;
+ height       : 48px;
+ line-height  : 48px !important;
+ font-size    : 16px;
+ color        : rgb(137, 137, 137);
+ margin-right : 10px;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-TypeItem:not(:first-child) {
+ margin-right : 0px;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-FilterItem select[name=rooms] option {
+ display : none;
+}
+
+.WdgMoyklassContent .WdgMoyklassSchedule-FilterItem select[name=rooms] option.show {
+ display : block;
+}
+
+.WdgMoyklassContent .wdgMoyklass-course {
+ padding-top : 25px;
+ border-top  : 4px solid #bbbbbb;
+}
+
+.WdgMoyklassContent .wdgMoyklass-course:first-child {
+ padding-top : 0;
+ border-top  : none;
+}
+
+.WdgMoyklassContent .wdgMoyklass-course > .wdgMoyklass-courseTitle {
+ margin-left : 0;
+}
+
+.WdgMoyklassContent .wdgMoyklass-course .wdgMoyklass-course-title {
+ padding-top    : 5px;
+ padding-bottom : 10px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-course .wdgMoyklass-course-title.wdgMoyklass-course-title_noBorder {
+ border : 0;
+}
+
+.WdgMoyklassContent .wdgMoyklass-group {
+ background-color : #f6f6f6;
+ margin           : 15px 0;
+}
+
+.WdgMoyklassContent .wdgMoyklass-group.row {
+ margin-left  : 0px;
+ margin-right : 0px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-group.row.table-row,
+.WdgMoyklassContent .wdgMoyklass-group.row.table-row-with-content {
+ margin : 10px 0px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-colorDefault {
+ color : #000000;
+}
+
+.WdgMoyklassContent .wdgMoyklass-colorDefault a {
+ text-decoration : none;
+}
+
+.wdgMoyklass-price {
+ font-size : 16px;
+}
+
+.wdgMoyklass-price_comment {
+ margin-top : 6px;
+ font-size  : 12px;
+}
+
+.wdgMoyklass-form-PriceComment,
+.WdgMoyklassContent .font-weight-400 {
+ font-weight : 400;
+}
+
+.WdgMoyklassContent .font-weight-600 {
+ font-weight : 600;
+}
+
+.WdgMoyklassContent .font-weight-300 {
+ font-weight : 300;
+}
+
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini > div:first-child {
+ margin-top : 8px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini-container-items {
+ display     : flex;
+ flex-wrap   : nowrap;
+ align-items : center;
+}
+
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini-item,
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini-item-empty {
+ padding          : 1px 10px;
+ margin-right     : 10px;
+ margin-bottom    : 4px;
+ color            : #ffffff;
+ text-transform   : lowercase;
+ text-align       : center;
+ cursor           : pointer;
+ background-color : #61bd70;
+}
+
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini-item-empty {
+ background-color : transparent !important;
+ padding          : 1px 0px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-scheduleLessonsMini span {
+ /* max-width: 80px; */
+ display       : block;
+ margin-bottom : 5px;
+ color         : #61bd70;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle {
+ border-bottom  : 2px solid #61bd70;
+ padding-bottom : 15px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle.onlyTitle,
+.WdgMoyklassContent .wdgMoyklass-courseTitle.usePhotoAndDesc {
+ padding-bottom : 5px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle-row {
+ display : table-row;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseCover,
+.WdgMoyklassContent .wdgMoyklass-courseShortDescription {
+ display        : table-cell;
+ vertical-align : bottom;
+}
+
+.WdgMoyklassContent .tabDescriptionSchedule.mobileView,
+.WdgMoyklassContent .wdgMoyklass-courseShortDescription-item.mobileView {
+ display : none;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseCover {
+ padding-right  : 20px;
+ padding-bottom : 4px;
+ width          : 250px;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle.smallDescCont img {
+ height    : 72px;
+ width     : auto;
+ max-width : none;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle.smallDescCont .wdgMoyklass-courseCover .img-container {
+ width         : 72px;
+ height        : 72px;
+ border-radius : 72px;
+ overflow      : hidden;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseTitle.smallDescCont .wdgMoyklass-courseCover {
+ width          : 72px;
+ vertical-align : middle;
+}
+
+.WdgMoyklassContent .wdgMoyklass-courseCover img {
+ width            : 250px;
+ height           : auto;
+ max-width        : none;
+ background-color : #efefef;
+}
+
+@media only screen and (max-width : 590px) {
+
+ .WdgMoyklassContent .imagesBoxSchedule .imagesBox__imageContainer {
+  display : block;
+  width   : auto;
+  padding : 0px 10px 10px;
+  margin  : 0px;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseCover {
+  width          : 100%;
+  padding-right  : 0px;
+  padding-bottom : 0px;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseCover img {
+  width : 100%;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseTitle:not(.smallDescCont) .wdgMoyklass-courseTitle-row {
+  display : block;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseTitle:not(.smallDescCont) .wdgMoyklass-courseTitle-row .wdgMoyklass-courseCover,
+ .WdgMoyklassContent .wdgMoyklass-courseTitle:not(.smallDescCont) .wdgMoyklass-courseTitle-row .wdgMoyklass-courseShortDescription {
+  display : block;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseShortDescription-item,
+ .WdgMoyklassContent .tabDescriptionSchedule {
+  display : none;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseCover {
+  margin : 0px 0px 15px;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseTitle.smallDescCont .wdgMoyklass-courseCover {
+  margin        : 0px;
+  padding-right : 10px;
+ }
+
+ .WdgMoyklassContent .wdgMoyklass-courseTitle.smallDescCont .wdgMoyklass-courseShortDescription-item.mobileView {
+  padding-top : 10px;
+ }
+
+ .WdgMoyklassContent .tabDescriptionSchedule.mobileView,
+ .WdgMoyklassContent .wdgMoyklass-courseShortDescription-item.mobileView {
+  display : block;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover {
+  width         : 100%;
+  margin-bottom : -10px;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover-small .img-container {
+  border-radius : 72px;
+  overflow      : hidden;
+  height        : 72px;
+  width         : 72px;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover-small img {
+  height    : 72px;
+  width     : auto;
+  max-width : none;
+ }
+
+ .WdgMoyklassContent .lesson-item-titleCalendar {
+  display : table-row;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover-small,
+ .WdgMoyklassContent .lesson-item-title,
+ .WdgMoyklassContent .lesson-item-cover-title {
+  display        : table-cell;
+  vertical-align : middle;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover-small {
+  min-width : 88px;
+ }
+
+ .WdgMoyklassContent .lesson-item-cover img {
+  width : 100%;
+ }
+}
+
+/* Calendar */
+.WdgMoyklassContent .top-row {
+ background-color : transparent !important;
+ font-size        : 16px;
+ margin-top       : 5px !important;
+ margin-bottom    : 5px !important;
+}
+
+.WdgMoyklassContent .top-row .view-link {
+ color : #898989;
+}
+
+.WdgMoyklassContent .top-row .view-link-current {
+ color           : #000000;
+ text-decoration : none;
+ cursor          : default;
+}
+
+.WdgMoyklassContent .text-right {
+ text-align : right;
+}
+
+.WdgMoyklassContent .text-center {
+ text-align : center;
+}
+
+.WdgMoyklassContent .text-left {
+ text-align : left;
+}
+
+.WdgMoyklassContent a.arrow-link {
+ color           : #898989;
+ text-decoration : none;
+ padding-left    : 20px;
+ padding-right   : 20px;
+}
+
+.WdgMoyklassContent .calendar-period-left,
+.WdgMoyklassContent .calendar-period-center,
+.WdgMoyklassContent .calendar-period-right {
+ display : inline-block;
+}
+
+.WdgMoyklassContent .calendar-period-center {
+ margin : 0px 20px;
+}
+
+.WdgCalendarWeek .first-header-col {
+ width : 9% !important;
+}
+
+.WdgCalendarWeek .hide-first-column .first-header-col {
+ width : 0% !important;
+}
+
+.WdgCalendarWeek .header-col {
+ width   : 13%;
+ padding : 12px 0px;
+}
+
+.WdgCalendarWeek .hide-first-column .header-col {
+ width : 14.28% !important;
+}
+
+.WdgCalendarWeek .no-lessons-message {
+ background-color : transparent;
+ font-size        : 12px;
+ text-align       : center;
+ width            : 100%;
+ padding          : 10px;
+}
+
+.WdgCalendarWeek .table-row {
+ display          : table-row;
+ background-color : transparent !important;
+ font-size        : 12px;
+ /*align-items: baseline !important;*/
+}
+
+.WdgCalendarWeek .first-cell,
+.WdgCalendarWeek .last-cell {
+ padding        : 5px 0px;
+ width          : 9%;
+ text-align     : center;
+ vertical-align : top;
+ display        : table-cell;
+ background     : #ffffff;
+}
+
+.WdgCalendarWeek .hide-first-column .first-cell, .WdgCalendarWeek .hide-first-column .last-cell {
+ width : 0% !important;
+}
+
+.WdgCalendarWeek .middle-cell {
+ padding        : 5px 0px;
+ width          : 13%;
+ display        : table-cell;
+ vertical-align : top;
+}
+
+.WdgCalendarWeek .hide-first-column .middle-cell {
+ width : 14.28% !important;
+}
+
+table.WdgCalendarMonth td,
+table.WdgCalendarWeek td {
+ line-height : initial;
+}
+
+table.WdgCalendarMonth td:first-of-type,
+table.WdgCalendarWeek td:first-of-type {
+ min-width : auto;
+}
+
+table.WdgCalendarMonth td.middle-cell:last-of-type,
+table.WdgCalendarWeek td.middle-cell:last-of-type {
+ padding-right : 0px;
+ text-align    : left;
+}
+
+table.WdgCalendarMonth td.header-col:last-of-type,
+table.WdgCalendarWeek td.header-col:last-of-type {
+ padding-right : 0px;
+ text-align    : center;
+}
+
+.WdgCalendarMonth .header-col {
+ width   : 14.28% !important;
+ padding : 12px 0px;
+}
+
+.WdgCalendarMonth .no-lessons-message {
+ background-color : transparent;
+ font-size        : 12px;
+ text-align       : center;
+ width            : 100%;
+ padding          : 10px;
+}
+
+.WdgCalendarMonth .table-row {
+ background-color : transparent !important;
+ font-size        : 12px;
+ vertical-align   : top;
+ display          : table-row;
+ table-layout     : fixed;
+ width            : 100%;
+ margin-bottom    : 0;
+}
+
+.WdgCalendarMonth .table-row-with-content {
+ background-color : transparent !important;
+ font-size        : 12px;
+ vertical-align   : top;
+ display          : table-row;
+ align-items      : baseline !important;
+ table-layout     : fixed;
+ width            : 100%;
+}
+
+.WdgCalendarMonth .first-cell,
+.WdgCalendarMonth .last-cell {
+ width      : 4px;
+ background : #ffffff;
+}
+
+.WdgCalendarMonth .middle-cell {
+ width          : 14.28%;
+ display        : table-cell;
+ vertical-align : top;
+ background     : #ffffff;
+}
+
+.WdgCalendarMonth .middle-cell-current,
+.WdgCalendarWeek .middle-cell-current {
+ background : #f0f0f0;
+ align-self : normal;
+}
+
+.WdgCalendarMonth .header-col-current,
+.WdgCalendarWeek .header-col-current {
+ background : #dadada;
+}
+
+.WdgCalendarMonth .middle-cell-weekend,
+.WdgCalendarWeek .middle-cell-weekend,
+.WdgCalendarMonth .header-col-weekend,
+.WdgCalendarWeek .header-col-weekend {
+ background : #ffebee;
+}
+
+.WdgCalendarWeek .date-cell,
+.WdgCalendarMonth .date-cell {
+ padding          : 5px 0px 5px;
+ background-color : transparent;
+ font-size        : 12px;
+ text-align       : center;
+ width            : 100%;
+}
+
+.WdgMoyklassContent .hourTitle {
+ margin    : 15px 0px 10px;
+ font-size : 14px;
+}
+
+.WdgMoyklassContent .calendar-mobile-date-range .text-center {
+ padding : 0px 20px;
+}
+
+.WdgMoyklassContent a.arrow-link {
+ display          : inline-block;
+ text-align       : center;
+ background-color : #f0f0f0;
+ color            : #000000;
+}
+
+.WdgMoyklassContent .calendar-mobile-date-range a.arrow-link {
+ padding : 5px 20px;
+}
+
+.WdgMoyklassContent .lesson-item {
+ cursor : pointer;
+}
+
+.WdgMoyklassContent a.lesson-register-link {
+ display       : block;
+ color         : #ffffff !important;
+ border-radius : 0px;
+ padding       : 6px;
+ text-align    : center;
+ font-size     : 12px;
+}
+
+.WdgMoyklassContent a.lesson-register-link-disable {
+ display          : block;
+ color            : #000000 !important;
+ border-radius    : 0px;
+ padding          : 6px;
+ text-align       : center;
+ font-size        : 12px;
+ background-color : #f0f0f0 !important;
+}
+
+.WdgMoyklassContent a.lesson-register-link-disable:hover {
+ text-decoration : none;
+}
+
+.WdgMoyklassContent .lessons-table {
+ background-color : #ffffff;
+ color            : #333333;
+ width            : 100%;
+ border-width     : 2px;
+ border-style     : solid;
+ border-color     : #d9d9d9;
+ border-spacing   : 0px;
+}
+
+.WdgMoyklassContent .header-row {
+ font-size        : 12px;
+ vertical-align   : middle;
+ margin-top       : 0 !important;
+ margin-bottom    : 5px;
+ background-color : #f0f0f0 !important;
+ color            : #333333;
+ border-radius    : 0px;
+ text-align       : center !important;
+ align-items      : center !important;
+}
+
+.WdgMoyklassContent .lesson-item {
+ margin         : 0px 5px 5px;
+ word-wrap      : break-word;
+ display        : flex;
+ flex-direction : column;
+}
+
+.WdgMoyklassContent .table-header-scroll-spacer {
+ width : 11px !important;
+}
+
+.WdgMoyklassContent .box-scroll-container {
+ color          : #333333;
+ width          : 100%;
+ border-width   : 2px;
+ border-style   : solid;
+ border-color   : #d9d9d9;
+ border-spacing : 0px;
+}
+
+.WdgMoyklassContent .box-scroll-padding {
+ padding-left  : 15px;
+ padding-right : 15px;
+}
+
+.WdgMoyklassContent .scroll {
+ max-height : 70vh !important;
+ overflow   : scroll;
+}
+
+.WdgMoyklassContent .scroll::-webkit-scrollbar {
+ width  : 13px;
+ height : 2px;
+}
+
+.WdgMoyklassContent .scroll::-webkit-scrollbar-thumb {
+ background-color : #f0f0f0 !important;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-cover img {
+ width      : 100%;
+ min-height : 50px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-inner {
+ padding : 7px 5px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-title {
+ font-size : 12px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-course-name,
+.WdgMoyklassContent .lesson-item .lesson-item-aud-room {
+ margin-top : 3px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-class-name {
+ font-size : 12px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-price {
+ font-size   : 12px;
+ font-weight : 600;
+ margin-top  : 3px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-comment {
+ font-size  : 11px;
+ margin-top : 3px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-auditory {
+ font-size : 11px;
+}
+
+.WdgMoyklassContent .lesson-item a.lesson-register-link {
+ display       : block;
+ color         : #ffffff !important;
+ border-radius : 0px;
+ padding       : 6px;
+ text-align    : center;
+ font-size     : 12px;
+}
+
+.WdgMoyklassContent a.lesson-register-link.mobile-register-link {
+ margin-top     : 14px;
+ font-size      : 16px;
+ padding-top    : 10px;
+ padding-bottom : 10px;
+}
+
+.WdgMoyklassContent .lesson-item .lesson-item-closed-inscription {
+ padding          : 5px 5px 5px 5px;
+ font-size        : 12px;
+ text-align       : center;
+ background-color : #f0f0f0 !important;
+}
+
+.WdgMoyklassContent .last-item-line {
+ border-top : 1px solid #d9d9d9;
+ width      : 100%;
+}
+
+.WdgMoyklassContent .lesson-item-bold {
+ font-weight : 600;
+}
+
+.WdgMoyklassContent .limit-to-3-lines {
+ overflow    : hidden;
+ display     : block;
+ line-height : 16px;
+ /* fallback */
+ max-height  : 48px;
+ /* fallback */
+ word-wrap   : break-word;
+}
+
+.WdgMoyklassContent .lesson-item-dialog-comment {
+ font-size   : 14px;
+ font-weight : 300;
+}
+
+.WdgMoyklassContent .lesson-item-dialog-date {
+ font-size   : 16px;
+ font-weight : 400 !important;
+}
+
+.WdgMoyklassContent .group-name {
+ font-weight : 400;
+ font-size   : 16px;
+ line-height : 20px;
+}
+
+.WdgMoyklassContent .lesson-item-dialog-tiny-comment {
+ color : #00a650;
+}
+
+.WdgMoyklassContent .lesson-item-price {
+ font-size   : 16px;
+ display     : block;
+ font-weight : 400;
+}
+
+.WdgMoyklassContent .lesson-item-bold {
+ font-weight : 600;
+}
+
+.WdgMoyklassContent .lesson-item-places-left {
+ color         : #00a650;
+ font-size     : 14px;
+ display       : block;
+ margin-bottom : 20px;
+}
+
+.WdgMoyklassContent .lesson-item-thin-text {
+ font-weight : 400;
+ line-height : 18px;
+}
+
+.WdgMoyklassContent .lesson-item-thin-text .lesson-item-auditory {
+ /* margin-bottom: 20px; */
+}
+
+/* HelloWeek calendar */
+/* Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ ÑÑ‚Ð¸Ð»ÑŒ Ð´Ð»Ñ hello week */
+:root {
+ --hello-week-bg-color       : #ffffff;
+ --hello-week-bg-day         : #ffffff;
+ --hello-week-color-day      : #ffa07a;
+ --hello-week-bg-week        : #ffffff;
+ --hello-week-color-week     : #ffa07a;
+ --hello-week-bg-tody        : #3e3e3e;
+ --hello-week-color-tody     : #ffffff;
+ --hello-week-bg-selected    : #61bd70;
+ --hello-week-color-selected : #ffffff;
+ --hello-week-bg-weekend     : #f3f3f3;
+ --hello-week-color-weekend  : silver;
+ --hello-week-bg-disabled    : #f5f5f5;
+ --hello-week-color-disabled : #b3bdd9
+}
+
+.hello-week {
+ width            : 100%;
+ margin           : 0 auto;
+ border-radius    : var(--hello-week-border-radius);
+ background-color : var(--hello-week-bg-color);
+ user-select      : none;
+ box-sizing       : border-box;
+}
+
+.hello-week .btn {
+ width      : 30px;
+ height     : 30px;
+ padding    : 0;
+ border     : 0;
+ outline    : none;
+ text-align : center;
+ cursor     : pointer
+}
+
+.hello-week__header {
+ display         : flex;
+ align-items     : center;
+ padding         : 2rem 1rem;
+ justify-content : center;
+}
+
+.hello-week__label {
+ font-size  : 1.6rem;
+ text-align : center
+}
+
+.hello-week__week {
+ display          : flex;
+ background-color : var(--hello-week-bg-week);
+ color            : var(--hello-week-color-week)
+}
+
+.hello-week__week__day {
+ display         : inline-flex;
+ align-items     : center;
+ justify-content : center;
+ width           : 12.28%;
+ margin          : 1%;
+ padding         : 5px;
+ font-weight     : 400;
+ cursor          : pointer
+}
+
+.hello-week__month {
+ display   : flex;
+ flex-wrap : wrap
+}
+
+.hello-week__day {
+ box-sizing       : border-box;
+ display          : inline-flex;
+ align-items      : center;
+ justify-content  : center;
+ width            : 12.28%;
+ margin           : 1%;
+ padding          : 5px;
+ border-radius    : var(--hello-week-border-radius);
+ background-color : #ffffff
+}
+
+.hello-week__day.is-active {
+ cursor : pointer
+}
+
+.hello-week__day.is-highlight {
+ background-color : var(--hello-week-bg-disabled)
+}
+
+.hello-week__day.is-selected {
+ background-color : var(--hello-week-bg-selected);
+ color            : var(--hello-week-color-selected)
+}
+
+.hello-week__day.is-today {
+ border : 1px solid var(--hello-week-bg-selected)
+}
+
+.hello-week__day.is-disabled {
+ border-radius : 0;
+ color         : var(--hello-week-color-disabled);
+ cursor        : not-allowed
+}
+
+.hello-week__header {
+ padding          : 5px 0px;
+ background-color : #f5f5f5;
+}
+
+.hello-week__week,
+.hello-week__month {
+ max-width : 280px;
+ margin    : 0 auto 0;
+}
+
+.moyklassWidget-navCalendar-prev,
+.moyklassWidget-navCalendar-next {
+ padding   : 5px 10px;
+ font-size : 14px;
+ cursor    : pointer;
+}
+
+.hello-week__label {
+ margin    : 0px 12px;
+ font-size : 14px;
+}
+
+/* GRID */
+
+.WdgMoyklassContent .row {
+ margin-left  : -15px;
+ margin-right : -15px;
+ display      : block;
+}
+
+.WdgMoyklassContent .row::after {
+ content : "";
+ display : block;
+ clear   : both;
+}
+
+.WdgMoyklassContent .row [class*="col-"] {
+ box-sizing : border-box;
+}
+
+.WdgMoyklassContent .col-xs-1,
+.WdgMoyklassContent .col-xs-2,
+.WdgMoyklassContent .col-xs-3,
+.WdgMoyklassContent .col-xs-4,
+.WdgMoyklassContent .col-xs-5,
+.WdgMoyklassContent .col-xs-6,
+.WdgMoyklassContent .col-xs-7,
+.WdgMoyklassContent .col-xs-8,
+.WdgMoyklassContent .col-xs-9,
+.WdgMoyklassContent .col-xs-10,
+.WdgMoyklassContent .col-xs-11,
+.WdgMoyklassContent .col-xs-12,
+.WdgMoyklassContent .col-sm-1,
+.WdgMoyklassContent .col-sm-2,
+.WdgMoyklassContent .col-sm-3,
+.WdgMoyklassContent .col-sm-4,
+.WdgMoyklassContent .col-sm-5,
+.WdgMoyklassContent .col-sm-6,
+.WdgMoyklassContent .col-sm-7,
+.WdgMoyklassContent .col-sm-8,
+.WdgMoyklassContent .col-sm-9,
+.WdgMoyklassContent .col-sm-10,
+.WdgMoyklassContent .col-sm-11,
+.WdgMoyklassContent .col-sm-12,
+.WdgMoyklassContent .col-md-1,
+.WdgMoyklassContent .col-md-2,
+.WdgMoyklassContent .col-md-3,
+.WdgMoyklassContent .col-md-4,
+.WdgMoyklassContent .col-md-5,
+.WdgMoyklassContent .col-md-6,
+.WdgMoyklassContent .col-md-7,
+.WdgMoyklassContent .col-md-8,
+.WdgMoyklassContent .col-md-9,
+.WdgMoyklassContent .col-md-10,
+.WdgMoyklassContent .col-md-11,
+.WdgMoyklassContent .col-md-12 {
+ position      : relative;
+ min-height    : 1px;
+ padding-left  : 15px;
+ padding-right : 15px;
+}
+
+.WdgMoyklassContent .col-xs-1,
+.WdgMoyklassContent .col-xs-2,
+.WdgMoyklassContent .col-xs-3,
+.WdgMoyklassContent .col-xs-4,
+.WdgMoyklassContent .col-xs-5,
+.WdgMoyklassContent .col-xs-6,
+.WdgMoyklassContent .col-xs-7,
+.WdgMoyklassContent .col-xs-8,
+.WdgMoyklassContent .col-xs-9,
+.WdgMoyklassContent .col-xs-10,
+.WdgMoyklassContent .col-xs-11,
+.WdgMoyklassContent .col-xs-12 {
+ float : left;
+}
+
+.WdgMoyklassContent .col-xs-12 {
+ width : 100%;
+}
+
+.WdgMoyklassContent .col-xs-11 {
+ width : 91.66666667%;
+}
+
+.WdgMoyklassContent .col-xs-10 {
+ width : 83.33333333%;
+}
+
+.WdgMoyklassContent .col-xs-9 {
+ width : 75%;
+}
+
+.WdgMoyklassContent .col-xs-8 {
+ width : 66.66666667%;
+}
+
+.WdgMoyklassContent .col-xs-7 {
+ width : 58.33333333%;
+}
+
+.WdgMoyklassContent .col-xs-6 {
+ width : 50%;
+}
+
+.WdgMoyklassContent .col-xs-5 {
+ width : 41.66666667%;
+}
+
+.WdgMoyklassContent .col-xs-4 {
+ width : 33.33333333%;
+}
+
+.WdgMoyklassContent .col-xs-3 {
+ width : 25%;
+}
+
+.WdgMoyklassContent .col-xs-2 {
+ width : 16.66666667%;
+}
+
+.WdgMoyklassContent .col-xs-1 {
+ width : 8.33333333%;
+}
+
+@media (min-width : 591px) {
+ .WdgMoyklassContent .col-sm-1,
+ .WdgMoyklassContent .col-sm-2,
+ .WdgMoyklassContent .col-sm-3,
+ .WdgMoyklassContent .col-sm-4,
+ .WdgMoyklassContent .col-sm-5,
+ .WdgMoyklassContent .col-sm-6,
+ .WdgMoyklassContent .col-sm-7,
+ .WdgMoyklassContent .col-sm-8,
+ .WdgMoyklassContent .col-sm-9,
+ .WdgMoyklassContent .col-sm-10,
+ .WdgMoyklassContent .col-sm-11,
+ .WdgMoyklassContent .col-sm-12 {
+  float : left;
+ }
+
+ .WdgMoyklassContent .col-sm-12 {
+  width : 100%;
+ }
+
+ .WdgMoyklassContent .col-sm-11 {
+  width : 91.66666667%;
+ }
+
+ .WdgMoyklassContent .col-sm-10 {
+  width : 83.33333333%;
+ }
+
+ .WdgMoyklassContent .col-sm-9 {
+  width : 75%;
+ }
+
+ .WdgMoyklassContent .col-sm-8 {
+  width : 66.66666667%;
+ }
+
+ .WdgMoyklassContent .col-sm-7 {
+  width : 58.33333333%;
+ }
+
+ .WdgMoyklassContent .col-sm-6 {
+  width : 50%;
+ }
+
+ .WdgMoyklassContent .col-sm-5 {
+  width : 41.66666667%;
+ }
+
+ .WdgMoyklassContent .col-sm-4 {
+  width : 33.33333333%;
+ }
+
+ .WdgMoyklassContent .col-sm-3 {
+  width : 25%;
+ }
+
+ .WdgMoyklassContent .col-sm-2 {
+  width : 16.66666667%;
+ }
+
+ .WdgMoyklassContent .col-sm-1 {
+  width : 8.33333333%;
+ }
+
+ .WdgMoyklassContent .col-sm-3.WdgMoyklassSchedule-FilterItem {
+  width : 23% !important;
+ }
+
+ .WdgMoyklassContent .col-sm-3.combo-schedule_calendar-filter {
+  width : 27% !important;
+ }
+}
+
+@media (min-width : 992px) {
+ .WdgMoyklassContent .col-md-1,
+ .WdgMoyklassContent .col-md-2,
+ .WdgMoyklassContent .col-md-3,
+ .WdgMoyklassContent .col-md-4,
+ .WdgMoyklassContent .col-md-5,
+ .WdgMoyklassContent .col-md-6,
+ .WdgMoyklassContent .col-md-7,
+ .WdgMoyklassContent .col-md-8,
+ .WdgMoyklassContent .col-md-9,
+ .WdgMoyklassContent .col-md-10,
+ .WdgMoyklassContent .col-md-11,
+ .WdgMoyklassContent .col-md-12 {
+  float : left;
+ }
+
+ .WdgMoyklassContent .col-md-12 {
+  width : 100%;
+ }
+
+ .WdgMoyklassContent .col-md-11 {
+  width : 91.66666667%;
+ }
+
+ .WdgMoyklassContent .col-md-10 {
+  width : 83.33333333%;
+ }
+
+ .WdgMoyklassContent .col-md-9 {
+  width : 75%;
+ }
+
+ .WdgMoyklassContent .col-md-8 {
+  width : 66.66666667%;
+ }
+
+ .WdgMoyklassContent .col-md-7 {
+  width : 58.33333333%;
+ }
+
+ .WdgMoyklassContent .col-md-6 {
+  width : 50%;
+ }
+
+ .WdgMoyklassContent .col-md-5 {
+  width : 41.66666667%;
+ }
+
+ .WdgMoyklassContent .col-md-4 {
+  width : 33.33333333%;
+ }
+
+ .WdgMoyklassContent .col-md-3 {
+  width : 25%;
+ }
+
+ .WdgMoyklassContent .col-md-2 {
+  width : 16.66666667%;
+ }
+
+ .WdgMoyklassContent .col-md-1 {
+  width : 8.33333333%;
+ }
+}
+
+@media (min-width : 1200px) {
+ .WdgMoyklassContent .col-lg-1,
+ .WdgMoyklassContent .col-lg-2,
+ .WdgMoyklassContent .col-lg-3,
+ .WdgMoyklassContent .col-lg-4,
+ .WdgMoyklassContent .col-lg-5,
+ .WdgMoyklassContent .col-lg-6,
+ .WdgMoyklassContent .col-lg-7,
+ .WdgMoyklassContent .col-lg-8,
+ .WdgMoyklassContent .col-lg-9,
+ .WdgMoyklassContent .col-lg-10,
+ .WdgMoyklassContent .col-lg-11,
+ .WdgMoyklassContent .col-lg-12 {
+  float : left;
+ }
+
+ .WdgMoyklassContent .col-lg-12 {
+  width : 100%;
+ }
+
+ .WdgMoyklassContent .col-lg-11 {
+  width : 91.66666667%;
+ }
+
+ .WdgMoyklassContent .col-lg-10 {
+  width : 83.33333333%;
+ }
+
+ .WdgMoyklassContent .col-lg-9 {
+  width : 75%;
+ }
+
+ .WdgMoyklassContent .col-lg-8 {
+  width : 66.66666667%;
+ }
+
+ .WdgMoyklassContent .col-lg-7 {
+  width : 58.33333333%;
+ }
+
+ .WdgMoyklassContent .col-lg-6 {
+  width : 50%;
+ }
+
+ .WdgMoyklassContent .col-lg-5 {
+  width : 41.66666667%;
+ }
+
+ .WdgMoyklassContent .col-lg-4 {
+  width : 33.33333333%;
+ }
+
+ .WdgMoyklassContent .col-lg-3 {
+  width : 25%;
+ }
+
+ .WdgMoyklassContent .col-lg-2 {
+  width : 16.66666667%;
+ }
+
+ .WdgMoyklassContent .col-lg-1 {
+  width : 8.33333333%;
+ }
+}
+
+.WdgMoyklassContent .row.schedule-filter-top .wdgMoyklassForm-item {
+ padding-right : 10px;
+}
+
+/* Popup container */
+.WdgMoyklassContent .popup {
+ position   : relative;
+ display    : inline-block;
+ cursor     : pointer;
+ min-width  : auto;
+ width      : auto;
+ box-shadow : none;
+}
+
+/* The actual popup (appears on top) */
+.WdgMoyklassContent .popup .popuptext,
+.popup .popuptext-right {
+ visibility  : hidden;
+ width       : 160px;
+ background  : rgba(255, 255, 255, 0.95);
+ text-align  : center;
+ padding     : 10px;
+ position    : absolute;
+ z-index     : 1;
+ bottom      : 125%;
+ left        : 100%;
+ margin-left : -80px;
+ border      : 1px solid #61bd70;
+ color       : #61bd70;
+}
+
+.WdgMoyklassContent .popup .popuptext-right {
+ left        : 100%;
+ margin-top  : -50%;
+ margin-left : 10px;
+ bottom      : initial;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.WdgMoyklassContent .popup .show {
+ visibility        : visible;
+ -webkit-animation : fadeIn 0.1s;
+ animation         : fadeIn 0.1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+ from {
+  opacity : 0;
+ }
+ to {
+  opacity : 1;
+ }
+}
+
+@keyframes fadeIn {
+ from {
+  opacity : 0;
+ }
+ to {
+  opacity : 1;
+ }
+}
+
+/* Mini loader */
+
+.mini-loader,
+.mini-loader:before,
+.mini-loader:after {
+ border-radius               : 50%;
+ width                       : 10px;
+ height                      : 10px;
+ -webkit-animation-fill-mode : both;
+ animation-fill-mode         : both;
+ -webkit-animation           : load7 1.8s infinite ease-in-out;
+ animation                   : load7 1.8s infinite ease-in-out;
+}
+
+.mini-loader {
+ font-size               : 4px;
+ margin                  : 10px 15px;
+ position                : relative;
+ text-indent             : -9999em;
+ -webkit-transform       : translateZ(0);
+ -ms-transform           : translateZ(0);
+ transform               : translateZ(0);
+ -webkit-animation-delay : -0.16s;
+ animation-delay         : -0.16s;
+}
+
+.mini-loader:before,
+.mini-loader:after {
+ content  : '';
+ position : absolute;
+}
+
+.mini-loader:before {
+ left                    : -4em;
+ -webkit-animation-delay : -0.32s;
+ animation-delay         : -0.32s;
+}
+
+.mini-loader:after {
+ left : 4em;
+}
+
+@-webkit-keyframes load7 {
+ 0%,
+ 80%,
+ 100% {
+  box-shadow : 0 2.5em 0 -1.3em;
+ }
+ 40% {
+  box-shadow : 0 2.5em 0 0;
+ }
+}
+
+@keyframes load7 {
+ 0%,
+ 80%,
+ 100% {
+  box-shadow : 0 2.5em 0 -1.3em;
+ }
+ 40% {
+  box-shadow : 0 2.5em 0 0;
+ }
+}
+
+@media only screen and (max-width : 590px) {
+
+ .WdgMoyklassContent .lesson-item {
+  margin : 5px;
+ }
+
+ .wdgMoyklassForm-lessons-selector {
+  width : 100%;
+ }
+
+ .mobile-fw-600 {
+  font-weight : 600 !important;
+ }
+
+ .FormLessonsContent-count .icon-mc-calendar {
+  right : 0px;
+ }
+
+ .WdgMoyklassContent .WdgMoyklassSchedule-FilterItem,
+ .WdgMoyklassContent .WdgMoyklassSchedule-FilterItem:not(:first-child),
+ .WdgMoyklassContent .combo-schedule_calendar-filter {
+  padding : 0px 15px !important;
+ }
+
+ .wdgMoyklass-scheduleLessonsMini-item,
+ .wdgMoyklass-scheduleLessonsMini-item-empty {
+  max-width : 75px !important;
+  min-width : auto !important;
+ }
+
+ .WdgMoyklassContent .request-schedule-button {
+  padding : 0px !important;
+ }
+
+ .WdgMoyklassContent .request-schedule-button label {
+  width         : 100% !important;
+  border-radius : 0px !important;
+  line-height   : 16px !important;
+  margin-bottom : 0px;
+ }
+
+ .wdgMoyklass-price_comment {
+  margin-top    : 8px;
+  margin-bottom : 5px;
+ }
+
+ .combo-schedule_calendar-filter {
+  border-bottom : 2px solid #368243;
+  margin-bottom : 20px;
+ }
+
+ .WdgMoyklassContent .lesson-item .lesson-item-auditory {
+  font-size : 12px;
+ }
+}
+
+.hidden {
+ display : none !important;
+}
+
+.oneClassItem {
+ padding-top : 5px;
+}
+
+.WdgMoyklassContent .filter-byday {
+ width      : 100%;
+ overflow-x : auto;
+}
+
+.WdgMoyklassContent .filter-byday-item {
+ padding        : 7px 0px;
+ min-width      : 39px;
+ background     : #f0f0f0;
+ vertical-align : top;
+ text-align     : center;
+ vertical-align : middle;
+}
+
+.WdgMoyklassContent .filter-byday-item.schemaBGColor {
+ color : #ffffff;
+}
+
+.WdgMoyklassContent .filter-byday-item-day {
+ padding-bottom : 3px;
+}
+
+.ql-align-center {
+ text-align : center;
+}
+
+.ql-align-right {
+ text-align : right;
+}
